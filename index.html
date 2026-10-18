@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marwaan Turns 6! · RSVP</title>
+  <meta name="description" content="Join us for Marwaan's 6th birthday party at Tiny Tiger, San Diego — Sunday, Nov 15, 2026, 4–6 PM. Please RSVP!" />
+  <meta property="og:title" content="Marwaan Turns 6! 🐯 You're invited" />
+  <meta property="og:description" content="Sunday, Nov 15 · 4–6 PM · Tiny Tiger, San Diego. Tap to RSVP." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rsvp.marwaan.net/" />
+  <meta name="theme-color" content="#ff7a1a" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐯</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="balloons" aria-hidden="true">
+    <span class="balloon b1"></span><span class="balloon b2"></span><span class="balloon b3"></span>
+    <span class="balloon b4"></span><span class="balloon b5"></span>
+  </div>
+
+  <main class="wrap">
+    <header class="hero">
+      <p class="eyebrow">You're invited to a roarsome party!</p>
+      <div class="badge" aria-hidden="true">
+        <span class="badge-num">6</span>
+        <span class="badge-tiger">🐯</span>
+      </div>
+      <h1><span class="name" data-child>Marwaan</span> is turning <span class="six">six!</span></h1>
+      <p class="lede">Come play, laugh and eat cake with us to celebrate our little tiger's big day.</p>
+    </header>
+
+    <section class="details" aria-label="Party details">
+      <article class="card detail">
+        <div class="icon">📅</div>
+        <div>
+          <h2>When</h2>
+          <p class="strong">Sunday, November 15, 2026</p>
+          <p>4:00 – 6:00 PM</p>
+        </div>
+      </article>
+      <article class="card detail">
+        <div class="icon">📍</div>
+        <div>
+          <h2>Where</h2>
+          <p class="strong" data-venue-name>Tiny Tiger</p>
+          <p data-venue-addr>San Diego, CA</p>
+          <a class="link" data-map target="_blank" rel="noopener">Open in Maps →</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="card countdown" aria-label="Countdown to the party">
+      <p class="count-label">Party starts in</p>
+      <div class="count-grid" data-countdown>
+        <div><b data-d>--</b><span>days</span></div>
+        <div><b data-h>--</b><span>hours</span></div>
+        <div><b data-m>--</b><span>mins</span></div>
+        <div><b data-s>--</b><span>secs</span></div>
+      </div>
+      <div class="cal-buttons">
+        <a class="btn ghost small" data-gcal target="_blank" rel="noopener">＋ Google Calendar</a>
+        <button class="btn ghost small" type="button" data-ics>＋ Apple / Outlook</button>
+      </div>
+    </section>
+
+    <section class="card rsvp" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="form-head">
+        <h2 id="rsvp-title">RSVP</h2>
+        <p class="muted">Kindly reply by <strong data-rsvp-by>November 8, 2026</strong>.</p>
+      </div>
+
+      <form id="rsvp-form" novalidate>
+        <fieldset class="choice">
+          <legend>Can you make it?</legend>
+          <label class="choice-card">
+            <input type="radio" name="attending" value="yes" required />
+            <span><em>🎉</em> Yes, we'll be there!</span>
+          </label>
+          <label class="choice-card">
+            <input type="radio" name="attending" value="no" />
+            <span><em>💌</em> Sorry, can't make it</span>
+          </label>
+        </fieldset>
+
+        <div class="grid two">
+          <label class="field">
+            <span>Your name <i>*</i></span>
+            <input name="name" autocomplete="name" required maxlength="80" placeholder="e.g. Sarah Khan" />
+          </label>
+          <label class="field">
+            <span>Email <i>*</i></span>
+            <input name="email" type="email" autocomplete="email" required maxlength="120" placeholder="you@example.com" />
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Phone <small>(optional, for day-of updates)</small></span>
+          <input name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="(555) 123-4567" />
+        </label>
+
+        <div class="attending-only" hidden>
+          <div class="grid two">
+            <div class="field">
+              <span>Adults</span>
+              <div class="stepper" data-stepper>
+                <button type="button" aria-label="Fewer adults" data-dec>−</button>
+                <input name="adults" type="number" inputmode="numeric" min="0" max="10" value="1" aria-label="Number of adults" />
+                <button type="button" aria-label="More adults" data-inc>+</button>
+              </div>
+            </div>
+            <div class="field">
+              <span>Kids</span>
+              <div class="stepper" data-stepper>
+                <button type="button" aria-label="Fewer kids" data-dec>−</button>
+                <input name="kids" type="number" inputmode="numeric" min="0" max="10" value="1" aria-label="Number of kids" />
+                <button type="button" aria-label="More kids" data-inc>+</button>
+              </div>
+            </div>
+          </div>
+
+          <label class="field">
+            <span>Kids' names &amp; ages <small>(optional)</small></span>
+            <input name="kidNames" maxlength="200" placeholder="e.g. Ayaan (6), Lily (4)" />
+          </label>
+
+          <label class="field">
+            <span>Allergies or dietary needs <small>(optional)</small></span>
+            <input name="dietary" maxlength="200" placeholder="e.g. nut allergy, vegetarian" />
+          </label>
+        </div>
+
+        <label class="field">
+          <span>A note for Marwaan <small>(optional)</small></span>
+          <textarea name="message" rows="3" maxlength="500" placeholder="Happy birthday, little tiger! 🐯"></textarea>
+        </label>
+
+        <!-- spam trap: real people never see or fill this -->
+        <label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off" /></label>
+
+        <p class="form-error" role="alert" hidden></p>
+
+        <button class="btn primary" type="submit">
+          <span class="btn-label">Send RSVP</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+        <p class="tiny muted">Already replied? Submit again with the same email to update your RSVP.</p>
+      </form>
+
+      <div class="thanks" hidden tabindex="-1">
+        <div class="thanks-emoji" aria-hidden="true">🎈</div>
+        <h3 data-thanks-title>Thank you!</h3>
+        <p data-thanks-body></p>
+        <button class="btn ghost small" type="button" data-edit>Change my RSVP</button>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p>Made with 🧡 for Marwaan · Questions? Just reply to the person who sent you this link.</p>
+    </footer>
+  </main>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <script src="assets/config.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
