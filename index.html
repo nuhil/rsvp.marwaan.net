@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=6" />
+  <link rel="stylesheet" href="assets/styles.css?v=7" />
 </head>
 <body>
   <div class="balloons" aria-hidden="true">
@@ -154,10 +154,11 @@
         <div class="thanks-emoji" aria-hidden="true">🎈</div>
         <h3 data-thanks-title>Thank you!</h3>
         <p data-thanks-body></p>
-        <div class="waiver-note" data-thanks-waiver hidden>
-          <p><strong>📝 One more thing:</strong> please fill out Tiny Tiger's waiver before the party.</p>
-          <a class="btn waiver-btn small" data-waiver target="_blank" rel="noopener">Sign the waiver →</a>
-        </div>
+        <p class="waiver" data-thanks-waiver hidden>
+          <span aria-hidden="true">📝</span>
+          One more thing: please sign Tiny Tiger's waiver.
+          <a class="link" data-waiver target="_blank" rel="noopener">Sign the waiver →</a>
+        </p>
         <div class="thanks-actions">
           <button class="btn ghost small" type="button" data-edit>Change my RSVP</button>
           <button class="btn ghost green small" type="button" data-new>＋ New RSVP</button>
@@ -195,7 +196,7 @@
   </main>
 
   <canvas id="confetti" aria-hidden="true"></canvas>
-  <script src="assets/config.js?v=6"></script>
-  <script src="assets/app.js?v=6"></script>
+  <script src="assets/config.js?v=7"></script>
+  <script src="assets/app.js?v=7"></script>
 </body>
 </html>

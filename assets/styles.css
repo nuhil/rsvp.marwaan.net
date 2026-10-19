@@ -195,13 +195,7 @@ textarea { resize: vertical; min-height: 84px; }
   background: #fff6d6; border: 1px solid #ffe08a; border-radius: 14px;
 }
 .waiver .link { margin: 0 0 0 4px; white-space: nowrap; }
-.btn.waiver-btn { flex: none; background: var(--ink); color: #fff; }
-.btn.waiver-btn:hover { background: #4a3527; }
-.waiver-note {
-  margin: 0 auto 18px; max-width: 420px; padding: 14px 16px;
-  background: #fff6d6; border: 1.5px solid #ffe08a; border-radius: 16px;
-}
-.thanks .waiver-note p { margin: 0 0 10px; color: var(--ink); }
+.thanks .waiver { margin: 0 auto 18px; max-width: 440px; }
 
 /* ---------- gifts ---------- */
 .gifts {

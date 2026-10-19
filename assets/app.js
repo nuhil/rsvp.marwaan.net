@@ -17,7 +17,7 @@
   $("[data-rsvp-by]").textContent = cfg.rsvpBy || "";
   if (!cfg.rsvpBy) $(".form-head p").hidden = true;
   $$("[data-waiver]").forEach((a) => (a.href = cfg.waiverUrl));
-  if (!cfg.waiverUrl) $(".waiver").hidden = true;
+  if (!cfg.waiverUrl) $$(".waiver").forEach((el) => (el.hidden = true));
 
   const location = [venue.name, venue.address || venue.city].filter(Boolean).join(", ");
   $("[data-map]").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(location);
