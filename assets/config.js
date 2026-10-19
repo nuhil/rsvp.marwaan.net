@@ -1,7 +1,7 @@
 // Edit this file to change party details or connect the RSVP backend.
 window.RSVP_CONFIG = {
   // Paste your Google Apps Script Web App URL here (see README.md).
-  endpoint: "",
+  endpoint: "https://script.google.com/macros/s/AKfycbw0S3xqNx1lvtIkGJ2DCluepXwWnWrVgNv6D6TuN_WRpVS-q-1JBMVYwvV6I5qJW-9qJQ/exec",
 
   child: "Marwaan",
   age: 6,
