@@ -134,6 +134,20 @@
     form.name.focus();
   });
 
+  // Start a blank RSVP (e.g. a shared device or replying for another family).
+  // The earlier reply stays in the sheet; only this device forgets it.
+  $("[data-new]").addEventListener("click", () => {
+    try { localStorage.removeItem(STORAGE_KEY); } catch (_) {}
+    form.reset();
+    $$(".invalid", form).forEach((el) => el.classList.remove("invalid"));
+    hideError();
+    syncAttending();
+    thanks.hidden = true;
+    form.hidden = false;
+    $("#rsvp").scrollIntoView({ behavior: "smooth", block: "start" });
+    $('input[name="attending"]', form).focus({ preventScroll: true });
+  });
+
   function collect() {
     const f = new FormData(form);
     const get = (k) => String(f.get(k) || "").trim();

@@ -184,6 +184,9 @@ textarea { resize: vertical; min-height: 84px; }
 .thanks h3 { font-family: "Fredoka", sans-serif; font-size: 1.9rem; margin: 6px 0 6px; }
 .thanks p { color: var(--ink-soft); margin: 0 auto 18px; max-width: 420px; }
 
+.thanks-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.thanks .tiny { margin: 12px auto 0; }
+
 .foot { text-align: center; color: var(--ink-soft); font-size: .9rem; margin-top: 28px; }
 
 /* ---------- balloons ---------- */
