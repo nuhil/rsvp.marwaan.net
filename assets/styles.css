@@ -112,6 +112,8 @@ h1 .six {
 .btn.primary:hover { box-shadow: 0 14px 28px -10px rgba(232, 93, 4, .9), inset 0 -3px 0 rgba(0, 0, 0, .12); }
 .btn.ghost { background: #fff1e3; color: var(--orange-deep); }
 .btn.ghost:hover { background: #ffe4c9; }
+.btn.ghost.green { background: #e3f7ea; color: #13803f; }
+.btn.ghost.green:hover { background: #ccf0d8; }
 .btn.small { padding: 10px 16px; font-size: .92rem; }
 .btn:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid rgba(255, 122, 26, .45); outline-offset: 2px; }
 
