@@ -16,6 +16,6 @@ window.RSVP_CONFIG = {
   venue: {
     name: "Tiny Tiger",
     city: "San Diego, CA",
-    address: "", // optional street address, e.g. "123 Example St, San Diego, CA"
+    address: "7310 Miramar Rd #100, San Diego, CA 92126", // optional street address, e.g. "123 Example St, San Diego, CA"
   },
 };
