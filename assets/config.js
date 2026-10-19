@@ -11,7 +11,7 @@ window.RSVP_CONFIG = {
   startISO: "2026-11-15T16:00:00-08:00",
   endISO: "2026-11-15T18:00:00-08:00",
   timeZone: "America/Los_Angeles",
-  rsvpBy: "November 8, 2026",
+  rsvpBy: "November 9, 2026",
   waiverUrl: "https://waiver.roller.app/tinytiger/waiver",
 
   venue: {
