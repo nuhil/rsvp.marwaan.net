@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=5" />
+  <link rel="stylesheet" href="assets/styles.css?v=6" />
 </head>
 <body>
   <div class="balloons" aria-hidden="true">
@@ -65,15 +65,6 @@
         <a class="btn ghost small" data-gcal target="_blank" rel="noopener">＋ Google Calendar</a>
         <button class="btn ghost small" type="button" data-ics>＋ Apple / Outlook</button>
       </div>
-    </section>
-
-    <section class="waiver" aria-labelledby="waiver-title">
-      <div class="waiver-icon" aria-hidden="true">📝</div>
-      <div class="waiver-text">
-        <h2 id="waiver-title">Before you come: sign the Tiny Tiger waiver</h2>
-        <p>Tiny Tiger asks every family to fill out their waiver before playing. Doing it ahead of time means the kids can head straight in to play!</p>
-      </div>
-      <a class="btn waiver-btn small" data-waiver target="_blank" rel="noopener">Sign the waiver →</a>
     </section>
 
     <section class="card rsvp" id="rsvp" aria-labelledby="rsvp-title">
@@ -192,13 +183,19 @@
       </details>
     </section>
 
+    <p class="waiver">
+      <span aria-hidden="true">📝</span>
+      Before you come, please sign Tiny Tiger's waiver.
+      <a class="link" data-waiver target="_blank" rel="noopener">Sign the waiver →</a>
+    </p>
+
     <footer class="foot">
       <p>Made with 🧡 for Marwaan · Questions? Just reply to the person who sent you this link.</p>
     </footer>
   </main>
 
   <canvas id="confetti" aria-hidden="true"></canvas>
-  <script src="assets/config.js?v=5"></script>
-  <script src="assets/app.js?v=5"></script>
+  <script src="assets/config.js?v=6"></script>
+  <script src="assets/app.js?v=6"></script>
 </body>
 </html>
