@@ -16,6 +16,8 @@
   $("[data-venue-addr]").textContent = venue.address || venue.city || "";
   $("[data-rsvp-by]").textContent = cfg.rsvpBy || "";
   if (!cfg.rsvpBy) $(".form-head p").hidden = true;
+  $$("[data-waiver]").forEach((a) => (a.href = cfg.waiverUrl));
+  if (!cfg.waiverUrl) $(".waiver").hidden = true;
 
   const location = [venue.name, venue.address || venue.city].filter(Boolean).join(", ");
   $("[data-map]").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(location);
@@ -226,6 +228,7 @@
       ? `${returning ? "You're RSVP'd" : "We've saved your RSVP"} for ${guests}. ${cfg.child} can't wait to celebrate with you! 🐯`
       : `We'll miss you! ${returning ? "Your reply is saved." : "Your reply has been saved."} If plans change, you can update it anytime.`;
     $(".thanks-emoji").textContent = yes ? "🎈" : "💌";
+    $("[data-thanks-waiver]").hidden = !(yes && cfg.waiverUrl);
     form.hidden = true;
     thanks.hidden = false;
     if (!returning) thanks.focus();

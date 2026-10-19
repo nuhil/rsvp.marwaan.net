@@ -189,6 +189,31 @@ textarea { resize: vertical; min-height: 84px; }
 .thanks-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
 .thanks .tiny { margin: 12px auto 0; }
 
+/* ---------- waiver ---------- */
+.waiver {
+  display: flex; align-items: center; gap: 14px; margin-bottom: 14px; padding: 18px 20px;
+  background: #fff6d6; border: 1.5px solid #ffe08a; border-radius: var(--radius);
+}
+.waiver-icon {
+  flex: none; width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center;
+  background: #fff; font-size: 22px;
+}
+.waiver-text { flex: 1; min-width: 0; }
+.waiver h2 { font-size: 1rem; margin: 0 0 2px; }
+.waiver p { margin: 0; color: var(--ink-soft); font-size: .95rem; }
+.btn.waiver-btn { flex: none; background: var(--ink); color: #fff; }
+.btn.waiver-btn:hover { background: #4a3527; }
+.waiver-note {
+  margin: 0 auto 18px; max-width: 420px; padding: 14px 16px;
+  background: #fff6d6; border: 1.5px solid #ffe08a; border-radius: 16px;
+}
+.thanks .waiver-note p { margin: 0 0 10px; color: var(--ink); }
+
+@media (max-width: 560px) {
+  .waiver { flex-wrap: wrap; align-items: flex-start; }
+  .waiver .waiver-btn { width: 100%; }
+}
+
 /* ---------- gifts ---------- */
 .gifts {
   margin-top: 14px; padding: 22px; text-align: center;
