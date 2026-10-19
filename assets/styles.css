@@ -189,6 +189,31 @@ textarea { resize: vertical; min-height: 84px; }
 .thanks-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
 .thanks .tiny { margin: 12px auto 0; }
 
+/* ---------- gifts ---------- */
+.gifts {
+  margin-top: 14px; padding: 22px; text-align: center;
+  border: 1.5px dashed #f0cfaf; border-radius: var(--radius); background: rgba(255, 252, 247, .92);
+}
+.gifts-icon { font-size: 28px; line-height: 1; }
+.gifts h2 { font-family: "Fredoka", sans-serif; font-weight: 600; font-size: 1.25rem; margin: 6px 0 6px; }
+.gifts p { color: var(--ink-soft); margin: 0 auto; max-width: 480px; }
+.gift-more { margin-top: 12px; }
+.gift-more summary {
+  display: inline-block; cursor: pointer; list-style: none;
+  color: var(--orange-deep); font-weight: 700; font-size: .95rem;
+}
+.gift-more summary::-webkit-details-marker { display: none; }
+.gift-more summary::after { content: " ▾"; font-size: .8em; }
+.gift-more[open] summary::after { content: " ▴"; }
+.gift-more summary:hover { text-decoration: underline; }
+.gift-more summary:focus-visible { outline: 3px solid rgba(255, 122, 26, .45); outline-offset: 3px; border-radius: 6px; }
+.gift-body { padding-top: 10px; animation: fadeIn .25s ease; }
+.gift-code { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 12px 0 8px; flex-wrap: wrap; }
+.gift-code code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 1.15rem; font-weight: 700; letter-spacing: .08em;
+  background: #fff; border: 1.5px solid var(--line); border-radius: 12px; padding: 8px 14px; user-select: all;
+}
+
 .foot { text-align: center; color: var(--ink-soft); font-size: .9rem; margin-top: 28px; }
 
 /* ---------- balloons ---------- */

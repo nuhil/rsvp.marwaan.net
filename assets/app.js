@@ -134,6 +134,20 @@
     form.name.focus();
   });
 
+  // Copy the Ugift code.
+  $("[data-copy]").addEventListener("click", async (e) => {
+    const btn = e.currentTarget;
+    const code = $("[data-gift-code]").textContent.trim();
+    try {
+      await navigator.clipboard.writeText(code);
+    } catch (_) {
+      getSelection().selectAllChildren($("[data-gift-code]")); // let them copy manually
+      return;
+    }
+    btn.textContent = "Copied ✓";
+    setTimeout(() => (btn.textContent = "Copy"), 2000);
+  });
+
   // Start a blank RSVP (e.g. a shared device or replying for another family).
   // The earlier reply stays in the sheet; only this device forgets it.
   $("[data-new]").addEventListener("click", () => {
